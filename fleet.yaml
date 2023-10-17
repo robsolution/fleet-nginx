@@ -4,6 +4,6 @@ helm:
   repo: https://charts.bitnami.com/bitnami
   chart: nginx
   version: "15.3.4"
-  values:
-    - values.yaml
+  #values:
+  #  - values.yaml
 defaultNamespace: default
