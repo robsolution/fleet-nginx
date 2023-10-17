@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: frontend
 spec:
   selector:
     matchLabels:
       app: guestbook
       tier: frontend
-  replicas: {{ .Values.replicaCount }}
+  replicas: {{ .Values.replicas }}
   template:
     metadata:
       labels:
@@ -15,8 +15,8 @@ spec:
         tier: frontend
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+      - name: php-redis
+        image: gcr.io/google-samples/gb-frontend:v5
         resources:
           requests:
             cpu: 100m

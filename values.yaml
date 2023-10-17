@@ -1,2 +1,3 @@
-replicaCount: 3
+replication: true
+replicas: 1
 serviceType: NodePort
