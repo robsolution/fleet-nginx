@@ -1,0 +1,14 @@
+namespace: default
+helm:
+  releaseName: nginx-server
+  chart: ./charts/nginx
+defaultNamespace: default
+#targets:
+#  - name: desenvolvimento
+#    clusterSelector:
+#      matchLabels:
+#        env: desenvolvimento
+#  - name: producao
+#    clusterSelector:
+#      matchLabels:
+#        env: producao
