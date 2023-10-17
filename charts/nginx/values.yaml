@@ -3,5 +3,5 @@ image:
   repository: nginx
   pullPolicy: IfNotPresent
 service:
-  type: ClusterIP
+  type: NodePort
   port: 80
