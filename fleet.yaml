@@ -1,7 +1,9 @@
 namespace: default
 helm:
   releaseName: nginx-server
-  chart: ./charts/nginx
+  repo: https://charts.bitnami.com/bitnami
+  chart: nginx
+  version: "15.3.4"
 defaultNamespace: default
 #targets:
 #  - name: desenvolvimento
