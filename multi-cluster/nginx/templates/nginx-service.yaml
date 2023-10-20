@@ -12,3 +12,5 @@ spec:
   selector:
     app: guestbook
     tier: frontend
+  externalIPs: 
+    - 192.168.15.14
